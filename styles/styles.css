@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hover:hover {
+  color: #f7c331;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: black;
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topheader {
+  box-shadow: 0 4px 5px #e5e5e5;
+  position: fixed;
+  background-color: white;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #124f88;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu li {
+  padding: 0 15px;
+}
+
+.menu a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+.profile-img {
+  width: 80%;
+  min-width: 300px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  color: #124f88;
+  font-family: "Noto Sans", sans-serif;
+  border-bottom: 3px solid #f7c331;
+}
+
+.profile-details {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  max-width: 450px;
+  margin: 20px auto;
+}
+.profile-info {
+  margin-bottom: 25px;
+}
+
+.profile-img-section {
+  position: relative;
+}
+
+.horizontal-padding {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.vertical-padding {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.skills {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.skills-title-container {
+  background-color: #f7c331;
+}
+
+.skills-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.certificates {
+  background-color: rgb(156, 153, 153);
+  color: blue;
+  text-decoration: underline;
+}
+
+.certificates:hover {
+  color: white;
+  background-color: #124f88;
+}
+
+.skills-skill {
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 0.25);
+  border-radius: 42px;
+  width: 150px;
+  margin: 10px;
+  height: 210px;
+  text-align: center;
+}
+
+.skills-skill:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.skills-img {
+  width: 80%;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects {
+  width: 100%;
+  background-color: #124f88;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card {
+  margin: 20px;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 7px;
+  cursor: context-menu;
+}
+
+.container-about-me {
+  margin: 30px auto;
+  height: 100%;
+  width: 98%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  background-color: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+  box-shadow: 2px 2px 5px #999;
+}
+
+.contact-container {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0099ff;
+  margin-top: -10px;
+  border-radius: 7px;
+}
+
+.footer{
+  height: 80px;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer p{
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.contact-container p {
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: -10px;
+}
+
+.contact-container button {
+  background-color: #124f88;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 0.5em 1em;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  filter: brightness(130%);
+}
+
+@media (max-width: 819px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media (max-width: 395px) {
+  .card {
+    width: 80%;
+  }
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+
+.card-img {
+  height: 200px;
+  width: 90%;
+  border: 10px solid white;
+  border-radius: 7px;
+}
+
+.card-title {
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
+
+.card-description {
+  color: grey;
+  text-align: center;
+  max-width: 400px;
+}
+
+.card-tools {
+  text-align: center;
+  max-width: 400px;
+}
+
+.card-button {
+  background-color: #124f88;
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 0.5em 1em;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.card-button:hover {
+  color: #124f88;
+  background-color: #f7c331;
+}
+
+@media (max-width: 746px) {
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #3a4460;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+
+  .menu li {
+    padding: 0;
+  }
+  .menu a {
+    line-height: 60px;
+    color: white;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 20px 15px;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+@media (min-width: 748px) {
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+  }
+
+  .profile-info {
+    margin-bottom: 0px;
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 350px;
+    transform: scaleX(-1);
+  }
+
+  .profile-title {
+    font-size: 60px;
+  }
+
+  .profile-details {
+    font-size: 25px;
+    margin: 30px 0;
+  }
+
+  .profile-btn {
+    font-size: 28px;
+    padding: 0.5em 1em;
+  }
+
+  .horizontal-padding {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .vertical-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .skills-title {
+    font-size: 50px;
+  }
+
+  .skills-skill {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facundo García</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <div class="logo">Bienvenido/a!</div>
+
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="images/burger.svg" alt="" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="images/close.svg" alt="" />
+          </button>
+          <li><a href="#profile" class="hover">Perfil</a></li>
+          <li><a href="#skills" class="hover">Habilidades</a></li>
+          <li><a href="#proyects" class="hover">Proyectos</a></li>
+          <li><a href="#about-me" class="hover">Sobre mi</a></li>
+          <li><a href="#contact" class="hover">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding" id="profile">
+      <section class="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">
+            Programador <br />
+            Facundo García
+          </h1>
+          <p class="profile-details">
+            Mi nombre es Facundo Garcia y esta es mi página de información
+            personal. Actualmente, tengo 20 años y me encuentro cursando la
+            carrera de analista de sistemas, la cual, solo queda presentar la 
+            tesis y recibir el título. Me encuentro en búsqueda de mi primer trabajo 
+            IT, con entusiasmo y grandes expectativas. 
+            En esta presentación encontrarán mis
+            conocimientos principales y algunos proyectos en los cuales, los
+            apliqué.
+            También pueden revisar algunas de mis <a class="certificates" target="blank" href="https://my-certificates-facu.netlify.app/">certificaciones</a>
+          </p>
+        </div>
+        <span class="profile-img-section">
+          <img class="profile-img" src="images/yo.png" alt="Facundo Foto" />
+        </span>
+      </section>
+    </div>
+
+    <div class="horizontal-padding vertical-padding" id="skills">
+      <section class="skills">
+        <div class="skills-title-container">
+          <h2 class="skills-title">Habilidades</h2>
+        </div>
+        <ul class="skills-list">
+          <li class="skills-skill">
+            <img src="images/html.png" alt="" class="skills-img" />
+            <h6>HTML</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/css.png" alt="" class="skills-img" />
+            <h6>CSS</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/js.png" alt="" class="skills-img" />
+            <h6>JavaScript</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/nodeJs.png" alt="" class="skills-img" />
+            <h6>Node.Js</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/react.png" alt="" class="skills-img" />
+            <h6>React.Js</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/MongoDb.png" alt="" class="skills-img" style="width: 100%;"/>
+            <h6>MongoDB</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/MySql.png" alt="" class="skills-img" style="width: 100%;"/>
+            <h6>MySQL</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/git.png" alt="" class="skills-img" style="width: 100%;"/>
+            <h6>Git</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/GitHub.png" alt="" class="skills-img" />
+            <h6>GitHub</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/java-selenium.png" alt="" class="skills-img" />
+            <h6>Java-Selenium</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/cucumber.png" alt="" class="skills-img" />
+            <h6>Cucumber</h6>
+          </li>
+          <li class="skills-skill">
+            <img src="images/cypress.jpg" alt="" class="skills-img" />
+            <h6>Cypress</h6>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="horizontal-padding vertical-padding" id="proyects">
+      <div class="skills-title-container">
+        <h2 class="skills-title">Proyectos</h2>
+      </div>
+      <section class="projects">
+        <div class="card">
+          <img src="images/weather.PNG" alt="Weather Search" class="card-img" />
+          <h3 class="card-title">Weather Search</h3>
+          <p class="card-description">
+            Aplicación que nos informa acerca del clima, ingresando ciudad y
+            país
+          </p>
+          <p class="card-tools">
+            Herramientas: API consumida de OpenWeather, React, algo de bootstrap
+            y CSS puro
+          </p>
+          <a href="https://cocky-mestorf-dc3f78.netlify.app/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/images.PNG"
+            alt="Buscador de imágenes"
+            class="card-img"
+          />
+          <h3 class="card-title">Buscador de imágenes</h3>
+          <p class="card-description">
+            Aplicación que nos trae de forma aleatoria imágenes de un tema que
+            hayamos indicado
+          </p>
+          <p class="card-tools">
+            Herramientas: API consumida de unsplash, React y css
+          </p>
+          <a href="https://imgsearching.netlify.app/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/presupuesto.PNG"
+            alt="App de presupuesto"
+            class="card-img"
+          />
+          <h3 class="card-title">App de presupuesto</h3>
+          <p class="card-description">
+            Aplicación que permitira administrar nuestro presupuesto
+          </p>
+          <p class="card-tools">Herramientas: React y bootstrap</p>
+          <a href="https://budget-app-facu.netlify.app/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/random-pokemon.png"
+            alt="Pokemon Random"
+            class="card-img"
+          />
+          <h3 class="card-title">Pokemon Random</h3>
+          <p class="card-description">
+            Aplicación que, por cada click en un botón, nos trae de forma
+            aleatoria un pokemon
+          </p>
+          <p class="card-tools">
+            Herramientas: API de PokeApi, vanilla CSS y JavaScript
+          </p>
+          <a href="https://quirky-pike-a6af66.netlify.app/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="images/pokedex.png" alt="Pokedex" class="card-img" />
+          <h3 class="card-title">Pokedex</h3>
+          <p class="card-description">
+            Lista completa de Pokemons, con paginación
+          </p>
+          <p class="card-tools">
+            Herramientas: API de PokeApi, vanilla CSS y JavaScript
+          </p>
+          <a href="https://relaxed-curran-50b61d.netlify.app/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="images/su-economia.png" alt="Pokedex" class="card-img" />
+          <h3 class="card-title">Su Economía E-Commerce</h3>
+          <p class="card-description">
+            Comercio Electrónico realizado para el mini-mercado Su Economía
+          </p>
+          <p class="card-tools">
+            Herramientas: React, Firebase para base de datos y autenticación de
+            usuarios, MaterialUI y CSS puro
+          </p>
+          <a href="https://elated-colden-001473.netlify.app/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="images/tasks.png" alt="Tasks" class="card-img" />
+          <h3 class="card-title">Tasks App</h3>
+          <p class="card-description">
+            Aplicación para poder organizar tus tareas
+          </p>
+          <p class="card-tools">
+            Herramientas: NodeJs, Handlebars para la vista, CSS, Express y
+            MongoDB.
+          </p>
+          <a href="https://task-app-crud-facu.herokuapp.com/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="images/app-movies.png" alt="Movies" class="card-img" />
+          <h3 class="card-title">App Películas para todos</h3>
+          <p class="card-description">
+            App que nos permite conocer todo tipo de películas con opción de
+            busqueda e infinite scroll
+          </p>
+          <p class="card-tools">
+            Herramientas: React, API de TheMovieDB, CSS puro
+          </p>
+          <a href="https://peaceful-allen-6ccf8e.netlify.app/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <img src="images/lasberracas.png" alt="Tasks" class="card-img" />
+          <h3 class="card-title">Las berracas indumentaria</h3>
+          <p class="card-description">
+            Página web para un grupo de emprendedoras en Buenos Aires
+          </p>
+          <p class="card-tools">Herramientas: HTML, CSS y JavaScript</p>
+          <a href="https://las-berracas.com.ar/" target="_BLANK">
+            <button class="card-button">VER</button>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="horizontal-padding vertical-padding" id="about-me">
+      <div class="skills-title-container">
+        <h2 class="skills-title">Sobre mi . . .</h2>
+      </div>
+      <div class="container-about-me">
+        <h1>
+          - Me gusta aprender cosas nuevas todo el tiempo.
+          <hr />
+          <br />
+          - Me encanta trabajar en equipo, brindar ayuda y también recibirla.
+          <hr />
+          <br />
+          - Tambíen me gusta transmitir mis conocimientos y mis aprendizajes a
+          las demás personas.
+          <hr />
+          <br />
+          - Soy muy puntual y me considero bastante responsable.
+          <hr />
+          <br />
+          - Tengo varios hobbies, como programar, tocar la guitarra, resolver
+          cubos de rubik y me apasionan temas como la astronomía, la física y
+          sus distintas ramas.
+        </h1>
+      </div>
+    </div>
+
+    <div class="horizontal-padding vertical-padding" id="contact">
+      <div class="skills-title-container">
+        <h2 class="skills-title">Contáctame</h2>
+      </div>
+
+      <img src="images/wave.svg" alt="" class="wave" />
+      <div class="contact-container">
+        <p>Telefono: 3541401747</p>
+        <p>E-mail: facuudangarcia@gmail.com</p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/facundo-garc%C3%ADa-78a619224/"
+            target="_blank"
+            ><button>Facundo García</button></a
+          >
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://github.com/Facu223" target="_blank"
+            ><button>Mi GitHub</button></a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>©Copyright. By Facundo García 2021</p>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
