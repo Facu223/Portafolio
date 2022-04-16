@@ -122,10 +122,6 @@ a {
   margin: 0 auto;
 }
 
-.skills-title-container {
-  background-color: #f7c331;
-}
-
 .skills-title {
   font-size: 30px;
   font-weight: bold;
@@ -147,23 +143,28 @@ a {
 .skills-skill {
   font-weight: 500;
   box-shadow: 0 4px 10px rgb(0, 0, 0, 0.25);
-  border-radius: 42px;
-  width: 150px;
-  margin: 10px;
+  width: 250px;
+  margin: 20px;
   height: 210px;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .skills-skill:hover {
   transform: scale(1.1);
-  transition: 0.2s;
+  transform-origin: bottom;
+  transition: 0.5s;
+  background-color: rgb(44, 37, 37);
+  color: white;
+  outline: 1px solid black;
 }
 
 .skills-img {
-  width: 80%;
+  width: 50%;
   height: 100px;
   text-align: center;
-  border-radius: 50%;
 }
 
 .skills-list {
@@ -176,7 +177,7 @@ a {
 
 .projects {
   width: 100%;
-  background-color: #124f88;
+  background-color: powderblue;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -215,6 +216,7 @@ a {
   height: 260px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #0099ff;
   margin-top: -10px;
@@ -223,7 +225,6 @@ a {
 
 .footer{
   height: 80px;
-  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,8 +309,8 @@ a {
 }
 
 .card-button:hover {
-  color: #124f88;
-  background-color: #f7c331;
+  background-color: powderblue;
+  color: black;
 }
 
 @media (max-width: 746px) {
