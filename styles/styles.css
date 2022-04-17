@@ -5,7 +5,7 @@ html {
 }
 
 .hover:hover {
-  color: #f7c331;
+  color: grey;
 }
 
 body {
@@ -75,8 +75,8 @@ a {
 }
 
 .profile-img {
-  width: 80%;
-  min-width: 300px;
+  width: 70%;
+  min-width: 250px;
 }
 
 .profile {
@@ -85,11 +85,8 @@ a {
 
 .profile-title {
   font-size: 35px;
-  font-weight: bold;
   margin: 0;
   color: #124f88;
-  font-family: "Noto Sans", sans-serif;
-  border-bottom: 3px solid #f7c331;
 }
 
 .profile-details {
